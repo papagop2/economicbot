@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Успешная оплата</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .success-icon {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">✅</div>
+        <h2>🌊 Морское Казино</h2>
+        <p>Оплата успешно проведена!</p>
+        <p>Баланс будет пополнен автоматически.</p>
+        <p>Можете закрыть это окно и вернуться в бот.</p>
+    </div>
+
+    <script>
+        // Закрываем окно через 5 секунд
+        setTimeout(() => {
+            window.close();
+        }, 5000);
+    </script>
+</body>
+</html> 
